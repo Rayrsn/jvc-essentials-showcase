@@ -4,6 +4,7 @@ import ProductCard from "@/components/ProductCard";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import productsData from "@/data/products.json";
+import PageTransition from "@/components/PageTransition";
 
 const Catalog = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -30,7 +31,8 @@ const Catalog = () => {
     : productsData.products.filter(p => p.categorySlug === selectedCategory);
 
   return (
-    <div className="min-h-screen py-12">
+    <PageTransition>
+      <div className="min-h-screen py-12">
       <div className="container">
         {/* Header */}
         <div className="mb-12 text-center">
@@ -96,7 +98,8 @@ const Catalog = () => {
           </Button>
         </div>
       </div>
-    </div>
+      </div>
+    </PageTransition>
   );
 };
 

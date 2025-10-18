@@ -3,6 +3,7 @@ import { ArrowLeft, Check, Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import productsData from "@/data/products.json";
+import PageTransition from "@/components/PageTransition";
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -10,22 +11,25 @@ const ProductDetail = () => {
 
   if (!product) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <h1 className="text-2xl font-bold mb-4">Product Not Found</h1>
-          <Link to="/catalog">
-            <Button variant="default">
-              <ArrowLeft className="mr-2 h-4 w-4" />
-              Back to Catalog
-            </Button>
-          </Link>
+      <PageTransition>
+        <div className="min-h-screen flex items-center justify-center">
+          <div className="text-center">
+            <h1 className="text-2xl font-bold mb-4">Product Not Found</h1>
+            <Link to="/catalog">
+              <Button variant="default">
+                <ArrowLeft className="mr-2 h-4 w-4" />
+                Back to Catalog
+              </Button>
+            </Link>
+          </div>
         </div>
-      </div>
+      </PageTransition>
     );
   }
 
   return (
-    <div className="min-h-screen py-12">
+    <PageTransition>
+      <div className="min-h-screen py-12">
       <div className="container">
         <Link to="/catalog" className="inline-flex items-center text-sm text-muted-foreground hover:text-secondary transition-smooth mb-8">
           <ArrowLeft className="mr-2 h-4 w-4" />
@@ -137,7 +141,8 @@ const ProductDetail = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </PageTransition>
   );
 };
 

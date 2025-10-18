@@ -4,10 +4,12 @@ import { Button } from "@/components/ui/button";
 import CategoryCard from "@/components/CategoryCard";
 import productsData from "@/data/products.json";
 import heroImage from "@/assets/hero-wholesale.jpg";
+import PageTransition from "@/components/PageTransition";
 
 const Home = () => {
   return (
-    <div className="min-h-screen">
+    <PageTransition>
+      <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative min-h-[600px] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -133,7 +135,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </PageTransition>
   );
 };
 

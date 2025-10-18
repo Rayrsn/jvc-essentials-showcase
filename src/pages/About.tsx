@@ -1,8 +1,10 @@
 import { Package, Users, Award, TrendingUp } from "lucide-react";
+import PageTransition from "@/components/PageTransition";
 
 const About = () => {
   return (
-    <div className="min-h-screen py-12">
+    <PageTransition>
+      <div className="min-h-screen py-12">
       <div className="container">
         {/* Hero Section */}
         <div className="text-center mb-16">
@@ -120,7 +122,8 @@ const About = () => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </PageTransition>
   );
 };
 
