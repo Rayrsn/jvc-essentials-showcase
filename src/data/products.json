@@ -1,0 +1,178 @@
+{
+  "categories": [
+    {
+      "id": "beauty",
+      "name": "Beauty Products",
+      "slug": "beauty",
+      "description": "Premium skincare, cosmetics, and beauty essentials for retailers",
+      "productCount": 45
+    },
+    {
+      "id": "toys",
+      "name": "Toys",
+      "slug": "toys",
+      "description": "Quality toys and educational products for all ages",
+      "productCount": 38
+    },
+    {
+      "id": "pets",
+      "name": "Pet Supplies",
+      "slug": "pets",
+      "description": "Everything your customers need for their beloved pets",
+      "productCount": 32
+    },
+    {
+      "id": "home",
+      "name": "Home & Kitchen",
+      "slug": "home",
+      "description": "Essential home and kitchen products for modern living",
+      "productCount": 52
+    }
+  ],
+  "products": [
+    {
+      "id": "beauty-001",
+      "name": "Luxury Skincare Set",
+      "category": "Beauty Products",
+      "categorySlug": "beauty",
+      "price": "£45.00",
+      "priceValue": 45,
+      "image": "/placeholder.svg",
+      "inStock": true,
+      "description": "Premium 5-piece skincare collection with natural ingredients",
+      "features": ["Organic ingredients", "Cruelty-free", "Dermatologist tested", "All skin types"]
+    },
+    {
+      "id": "beauty-002",
+      "name": "Professional Makeup Brush Set",
+      "category": "Beauty Products",
+      "categorySlug": "beauty",
+      "price": "£32.00",
+      "priceValue": 32,
+      "image": "/placeholder.svg",
+      "inStock": true,
+      "description": "12-piece professional makeup brush collection",
+      "features": ["Synthetic bristles", "Ergonomic handles", "Travel case included", "Easy to clean"]
+    },
+    {
+      "id": "beauty-003",
+      "name": "Anti-Aging Serum",
+      "category": "Beauty Products",
+      "categorySlug": "beauty",
+      "price": "£28.00",
+      "priceValue": 28,
+      "image": "/placeholder.svg",
+      "inStock": true,
+      "description": "Advanced formula with hyaluronic acid and vitamins",
+      "features": ["30ml bottle", "Reduces fine lines", "Hydrates skin", "Fast absorbing"]
+    },
+    {
+      "id": "toys-001",
+      "name": "Educational Building Blocks",
+      "category": "Toys",
+      "categorySlug": "toys",
+      "price": "£24.00",
+      "priceValue": 24,
+      "image": "/placeholder.svg",
+      "inStock": true,
+      "description": "200-piece colorful building block set for creative play",
+      "features": ["Ages 3+", "BPA-free plastic", "Storage container", "Educational guide"]
+    },
+    {
+      "id": "toys-002",
+      "name": "Remote Control Racing Car",
+      "category": "Toys",
+      "categorySlug": "toys",
+      "price": "£38.00",
+      "priceValue": 38,
+      "image": "/placeholder.svg",
+      "inStock": true,
+      "description": "High-speed RC car with rechargeable battery",
+      "features": ["Up to 30km/h", "Rechargeable", "Range: 50m", "Durable design"]
+    },
+    {
+      "id": "toys-003",
+      "name": "Plush Teddy Bear Collection",
+      "category": "Toys",
+      "categorySlug": "toys",
+      "price": "£18.00",
+      "priceValue": 18,
+      "image": "/placeholder.svg",
+      "inStock": true,
+      "description": "Soft and cuddly teddy bears in various sizes",
+      "features": ["Hypoallergenic", "Machine washable", "CE certified", "Various colors"]
+    },
+    {
+      "id": "pets-001",
+      "name": "Premium Dog Food",
+      "category": "Pet Supplies",
+      "categorySlug": "pets",
+      "price": "£35.00",
+      "priceValue": 35,
+      "image": "/placeholder.svg",
+      "inStock": true,
+      "description": "5kg bag of nutritious dry dog food",
+      "features": ["All breeds", "Natural ingredients", "Grain-free option", "Omega fatty acids"]
+    },
+    {
+      "id": "pets-002",
+      "name": "Cat Scratching Post",
+      "category": "Pet Supplies",
+      "categorySlug": "pets",
+      "price": "£42.00",
+      "priceValue": 42,
+      "image": "/placeholder.svg",
+      "inStock": true,
+      "description": "Multi-level cat tree with scratching posts",
+      "features": ["Sisal rope", "Plush platforms", "Hanging toys", "Stable base"]
+    },
+    {
+      "id": "pets-003",
+      "name": "Pet Grooming Kit",
+      "category": "Pet Supplies",
+      "categorySlug": "pets",
+      "price": "£26.00",
+      "priceValue": 26,
+      "image": "/placeholder.svg",
+      "inStock": false,
+      "description": "Complete grooming set for dogs and cats",
+      "features": ["7-piece set", "Stainless steel", "Storage bag", "All coat types"]
+    },
+    {
+      "id": "home-001",
+      "name": "Stainless Steel Cookware Set",
+      "category": "Home & Kitchen",
+      "categorySlug": "home",
+      "price": "£89.00",
+      "priceValue": 89,
+      "image": "/placeholder.svg",
+      "inStock": true,
+      "description": "10-piece professional cookware set",
+      "features": ["Dishwasher safe", "Induction compatible", "Lifetime warranty", "Even heat distribution"]
+    },
+    {
+      "id": "home-002",
+      "name": "Kitchen Knife Set",
+      "category": "Home & Kitchen",
+      "categorySlug": "home",
+      "price": "£55.00",
+      "priceValue": 55,
+      "image": "/placeholder.svg",
+      "inStock": true,
+      "description": "8-piece professional chef knife set with block",
+      "features": ["German steel", "Ergonomic handles", "Wooden block", "Sharpening rod"]
+    },
+    {
+      "id": "home-003",
+      "name": "Smart Coffee Maker",
+      "category": "Home & Kitchen",
+      "categorySlug": "home",
+      "price": "£68.00",
+      "priceValue": 68,
+      "image": "/placeholder.svg",
+      "inStock": true,
+      "description": "Programmable coffee maker with thermal carafe",
+      "features": ["12-cup capacity", "Timer function", "Auto shut-off", "Thermal carafe"]
+    }
+  ]
+}
