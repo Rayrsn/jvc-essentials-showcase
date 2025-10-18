@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
+import logo from "@/assets/logo.svg";
 
 const Footer = () => {
   return (
@@ -8,9 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="font-heading text-2xl font-bold text-primary">
-              JVC <span className="text-secondary">Goods</span>
-            </div>
+            <img src={logo} alt="JVC Goods" className="h-20 w-auto" />
             <p className="text-sm text-muted-foreground leading-relaxed">
               Curated essentials, crafted for everyday trust.
             </p>
