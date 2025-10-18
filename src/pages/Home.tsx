@@ -36,7 +36,7 @@ const Home = () => {
                 </Button>
               </Link>
               <Link to="/contact">
-                <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-primary font-semibold">
+                <Button size="lg" variant="outline" className="border-2 border-white text-black hover:bg-white hover:text-primary font-semibold">
                   Get Quote
                 </Button>
               </Link>
@@ -124,7 +124,7 @@ const Home = () => {
                 </Button>
               </Link>
               <a href="tel:+447577035776">
-                <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white/10 font-semibold">
+                <Button size="lg" variant="outline" className="border-2 border-white text-black hover:bg-white/10 font-semibold">
                   <Phone className="mr-2 h-5 w-5" />
                   +44 7577 035776
                 </Button>
