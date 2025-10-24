@@ -8,6 +8,7 @@
     "build": "vite build",
     "build:dev": "vite build --mode development",
     "build:gh-pages": "vite build",
+    "build:custom-domain": "node scripts/build-for-domain.js --custom-domain",
     "lint": "eslint .",
     "preview": "vite preview"
   },
