@@ -37,21 +37,31 @@ const ProductDetail = () => {
         </Link>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Product Image */}
-          <div className="relative">
-            <div className="aspect-square rounded-lg overflow-hidden shadow-card bg-muted">
-              <img
-                src={product.image}
-                alt={product.name}
-                className="w-full h-full object-cover"
-              />
+            {/* Product Image and category spot banner */}
+            <div className="relative">
+              <div className="mb-6 rounded-lg overflow-hidden">
+                <img
+                  src={`/products/${product.categorySlug}-spot.png`}
+                  alt={`${product.category} spotlight`}
+                  className="w-full h-36 object-cover rounded-lg"
+                />
+              </div>
+
+              <div className="relative">
+                <div className="aspect-square rounded-lg overflow-hidden shadow-card bg-muted">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                {!product.inStock && (
+                  <Badge variant="destructive" className="absolute top-4 right-4">
+                    Out of Stock
+                  </Badge>
+                )}
+              </div>
             </div>
-            {!product.inStock && (
-              <Badge variant="destructive" className="absolute top-4 right-4">
-                Out of Stock
-              </Badge>
-            )}
-          </div>
 
           {/* Product Info */}
           <div>

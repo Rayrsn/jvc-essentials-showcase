@@ -34,6 +34,16 @@ const Catalog = () => {
     <PageTransition>
       <div className="min-h-screen py-12">
       <div className="container">
+        {/* Category hero/banner when a category is selected */}
+        {selectedCategory !== "all" && (
+          <div className="mb-8 rounded-lg overflow-hidden">
+            <img
+              src={`/products/${selectedCategory}-hero.png`}
+              alt={`${selectedCategory} hero`}
+              className="w-full h-44 object-cover rounded-lg"
+            />
+          </div>
+        )}
         {/* Header */}
         <div className="mb-12 text-center">
           <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">

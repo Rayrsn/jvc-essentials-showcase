@@ -99,7 +99,7 @@ const Home = () => {
                 key={category.id}
                 title={category.name}
                 description={category.description}
-                image="/placeholder.svg"
+                image={`/products/${category.slug}-thumb.png`}
                 slug={category.slug}
                 productCount={category.productCount}
               />
