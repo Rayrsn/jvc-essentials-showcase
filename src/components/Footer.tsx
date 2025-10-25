@@ -95,6 +95,13 @@ const Footer = () => {
 
         <div className="mt-8 pt-8 border-t text-center text-sm text-muted-foreground">
           <p>&copy; {new Date().getFullYear()} NYSPV LTD. All rights reserved.</p>
+          <div className="mt-2 flex items-center justify-center gap-4">
+            <Link to="/terms" className="hover:text-secondary transition-smooth">Terms</Link>
+            <span>•</span>
+            <Link to="/privacy" className="hover:text-secondary transition-smooth">Privacy</Link>
+            <span>•</span>
+            <Link to="/returns" className="hover:text-secondary transition-smooth">Returns &amp; Shipping</Link>
+          </div>
         </div>
       </div>
     </footer>
