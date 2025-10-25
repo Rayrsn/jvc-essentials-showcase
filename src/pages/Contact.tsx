@@ -32,12 +32,8 @@ const Contact = () => {
       <div className="container">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">
-            Get In Touch
-          </h1>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Have questions about our products or wholesale pricing? We're here to help.
-          </p>
+          <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">Contact us</h1>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">We typically reply within 1–2 business days.</p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 max-w-6xl mx-auto">
@@ -45,45 +41,11 @@ const Contact = () => {
           <div className="space-y-8">
             <div>
               <h2 className="font-heading text-2xl font-bold mb-6">Contact Information</h2>
-              <div className="space-y-6">
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-secondary/10 text-secondary flex items-center justify-center flex-shrink-0">
-                    <Mail className="h-6 w-6" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold mb-1">Email</h3>
-                    <a href="mailto:sales@jvcgoods.com" className="text-muted-foreground hover:text-secondary transition-smooth">
-                      sales@jvcgoods.com
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-accent/10 text-accent flex items-center justify-center flex-shrink-0">
-                    <Phone className="h-6 w-6" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold mb-1">Phone / WhatsApp</h3>
-                    <a href="tel:+447577035776" className="text-muted-foreground hover:text-secondary transition-smooth">
-                      +44 7577 035776
-                    </a>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-secondary/10 text-secondary flex items-center justify-center flex-shrink-0">
-                    <MapPin className="h-6 w-6" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold mb-1">Address</h3>
-                    <p className="text-muted-foreground">
-                      NYSPV LTD<br />
-                      128 City Road<br />
-                      London, EC1V 2NX
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <ul className="mt-2 text-sm text-muted-foreground space-y-2">
+                <li><span className="font-semibold">Email:</span> <a className="underline" href="mailto:sales@jvcgoods.com">sales@jvcgoods.com</a></li>
+                <li><span className="font-semibold">Phone/WhatsApp:</span> +44 7577 035776</li>
+                <li><span className="font-semibold">Address:</span> NYSPV LTD, 128 City Road, London, EC1V 2N</li>
+              </ul>
             </div>
 
             <div className="p-6 rounded-lg bg-muted/50 border">
@@ -100,85 +62,48 @@ const Contact = () => {
           <div className="lg:col-span-2">
             <div className="p-8 rounded-lg bg-card border shadow-card">
               <h2 className="font-heading text-2xl font-bold mb-6">Send Us a Message</h2>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <form onSubmit={handleSubmit} name="enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field" className="space-y-6">
+                <input type="hidden" name="form-name" value="enquiry" />
+                <p className="hidden"><label>Don’t fill this out: <input name="bot-field" /></label></p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
-                    <Label htmlFor="name">Name *</Label>
-                    <Input 
-                      id="name" 
-                      name="name"
-                      placeholder="Your name" 
-                      required 
-                    />
+                    <Label htmlFor="name">Your name</Label>
+                    <Input id="name" name="name" placeholder="Jane Doe" required />
                   </div>
                   <div className="space-y-2">
-                    <Label htmlFor="company">Company</Label>
-                    <Input 
-                      id="company" 
-                      name="company"
-                      placeholder="Your company" 
-                    />
+                    <Label htmlFor="email">Email</Label>
+                    <Input id="email" name="email" type="email" placeholder="you@company.com" required />
                   </div>
                 </div>
 
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <Label htmlFor="email">Email *</Label>
-                    <Input 
-                      id="email" 
-                      name="email"
-                      type="email" 
-                      placeholder="your@email.com" 
-                      required 
-                    />
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <Label htmlFor="category">Category</Label>
+                    <select id="category" name="category" className="mt-1 w-full rounded-xl border px-3 py-2 outline-none focus:ring-2 focus:ring-foreground">
+                      <option>Toys</option>
+                      <option>Pets</option>
+                      <option>Home &amp; Kitchen</option>
+                      <option>Beauty</option>
+                      <option>Other</option>
+                    </select>
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="phone">Phone</Label>
-                    <Input 
-                      id="phone" 
-                      name="phone"
-                      type="tel" 
-                      placeholder="+44 7577 035776" 
-                    />
+                    <Input id="phone" name="phone" placeholder="+44 7577 035776" />
                   </div>
                 </div>
 
-                <div className="space-y-2">
-                  <Label htmlFor="subject">Subject *</Label>
-                  <Input 
-                    id="subject" 
-                    name="subject"
-                    placeholder="What is this regarding?" 
-                    required 
-                  />
+                <div>
+                  <Label htmlFor="message">Message</Label>
+                  <Textarea id="message" name="message" rows={5} placeholder="How can we help?" required />
                 </div>
 
-                <div className="space-y-2">
-                  <Label htmlFor="message">Message *</Label>
-                  <Textarea 
-                    id="message" 
-                    name="message"
-                    placeholder="Tell us about your wholesale needs..." 
-                    rows={6}
-                    required 
-                  />
-                </div>
-
-                <Button 
-                  type="submit" 
-                  size="lg" 
-                  className="w-full bg-primary hover:bg-primary/90"
-                  disabled={isSubmitting}
-                >
-                  {isSubmitting ? (
-                    "Sending..."
-                  ) : (
-                    <>
-                      Send Message
-                      <Send className="ml-2 h-5 w-5" />
-                    </>
-                  )}
+                <Button type="submit" size="lg" className="w-full bg-foreground text-white" disabled={isSubmitting}>
+                  {isSubmitting ? "Sending..." : "Send"}
                 </Button>
+
+                <p className="text-[11px] text-muted-foreground">This form uses Netlify Forms. By submitting, you agree to our <a className="underline" href="/privacy">Privacy Policy</a>.</p>
               </form>
             </div>
           </div>

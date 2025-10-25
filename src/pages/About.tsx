@@ -1,127 +1,74 @@
-import { Package, Users, Award, TrendingUp } from "lucide-react";
 import PageTransition from "@/components/PageTransition";
 
 const About = () => {
+  const year = new Date().getFullYear();
+
   return (
     <PageTransition>
-      <div className="min-h-screen py-12">
-      <div className="container">
-        {/* Hero Section */}
-        <div className="text-center mb-16">
-          <h1 className="font-heading text-4xl md:text-5xl font-bold mb-6">
-            About JVC Goods
-          </h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Your trusted partner for premium wholesale products. 
-            We curate essentials crafted for everyday trust.
-          </p>
-        </div>
+      <div className="min-h-screen">
+        <section className="border-b bg-rose-100/30">
+          <div className="container py-16">
+            <h1 className="text-4xl font-bold tracking-tight">About JVC Goods</h1>
+            <p className="mt-4 text-foreground/80 max-w-prose">
+              We’re a London-based online store offering curated products across four categories:
+              <strong> Toys</strong>, <strong>Pets</strong>, <strong>Home &amp; Kitchen</strong>, and <strong>Beauty</strong>.
+              Our focus is dependable quality, fair pricing, and responsive customer support.
+            </p>
 
-        {/* Mission Statement */}
-        <div className="max-w-4xl mx-auto mb-20">
-          <div className="p-8 md:p-12 rounded-lg gradient-hero text-white">
-            <h2 className="font-heading text-3xl font-bold mb-4">Our Mission</h2>
-            <p className="text-lg leading-relaxed text-white/90">
-              At JVC Goods, we're dedicated to providing businesses with high-quality wholesale products 
-              across multiple categories. Our focus is on building lasting partnerships through reliability, 
-              quality, and exceptional service. We carefully curate our product selection to ensure that 
-              every item meets our high standards for quality and value.
-            </p>
-          </div>
-        </div>
-
-        {/* Values */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
-          <div className="text-center">
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-secondary/10 text-secondary mb-6">
-              <Package className="h-10 w-10" />
-            </div>
-            <h3 className="font-heading text-xl font-semibold mb-3">Quality First</h3>
-            <p className="text-muted-foreground">
-              Every product is carefully selected and vetted to meet our strict quality standards
-            </p>
-          </div>
-          <div className="text-center">
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-accent/10 text-accent mb-6">
-              <Users className="h-10 w-10" />
-            </div>
-            <h3 className="font-heading text-xl font-semibold mb-3">Customer Focus</h3>
-            <p className="text-muted-foreground">
-              Your success is our success. We're here to support your business needs
-            </p>
-          </div>
-          <div className="text-center">
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-secondary/10 text-secondary mb-6">
-              <Award className="h-10 w-10" />
-            </div>
-            <h3 className="font-heading text-xl font-semibold mb-3">Reliability</h3>
-            <p className="text-muted-foreground">
-              Consistent quality and timely delivery you can count on, order after order
-            </p>
-          </div>
-          <div className="text-center">
-            <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-accent/10 text-accent mb-6">
-              <TrendingUp className="h-10 w-10" />
-            </div>
-            <h3 className="font-heading text-xl font-semibold mb-3">Growth Partnership</h3>
-            <p className="text-muted-foreground">
-              We grow when you grow. Your business success drives everything we do
-            </p>
-          </div>
-        </div>
-
-        {/* Company Info */}
-        <div className="max-w-3xl mx-auto">
-          <div className="p-8 md:p-12 rounded-lg bg-muted/30 border">
-            <h2 className="font-heading text-2xl font-bold mb-6 text-center">Company Information</h2>
-            <div className="space-y-4">
-              <div className="flex flex-col sm:flex-row sm:items-center gap-2">
-                <span className="font-semibold min-w-[140px]">Company Name:</span>
-                <span className="text-muted-foreground">NYSPV LTD</span>
+            <div className="mt-8 grid md:grid-cols-3 gap-6">
+              <div className="rounded-xl border p-6 bg-white">
+                <h3 className="font-semibold">Quality First</h3>
+                <p className="mt-2 text-sm text-foreground/70">We select practical, evergreen items with good durability and low defect rates.</p>
               </div>
-              <div className="flex flex-col sm:flex-row sm:items-center gap-2">
-                <span className="font-semibold min-w-[140px]">Address:</span>
-                <span className="text-muted-foreground">128 City Road, London, EC1V 2NX</span>
+              <div className="rounded-xl border p-6 bg-white">
+                <h3 className="font-semibold">Fast Dispatch</h3>
+                <p className="mt-2 text-sm text-foreground/70">We process orders quickly and provide tracking where available.</p>
               </div>
-              <div className="flex flex-col sm:flex-row sm:items-center gap-2">
-                <span className="font-semibold min-w-[140px]">Email:</span>
-                <a href="mailto:sales@jvcgoods.com" className="text-secondary hover:underline">
-                  sales@jvcgoods.com
-                </a>
-              </div>
-              <div className="flex flex-col sm:flex-row sm:items-center gap-2">
-                <span className="font-semibold min-w-[140px]">Phone:</span>
-                <a href="tel:+447577035776" className="text-secondary hover:underline">
-                  +44 7577 035776
-                </a>
+              <div className="rounded-xl border p-6 bg-white">
+                <h3 className="font-semibold">Human Support</h3>
+                <p className="mt-2 text-sm text-foreground/70">Questions? Reach us via email or WhatsApp—real help, not bots.</p>
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* Product Categories */}
-        <div className="mt-20 text-center">
-          <h2 className="font-heading text-3xl font-bold mb-6">What We Offer</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
-            <div className="p-6 rounded-lg bg-card border shadow-card">
-              <h3 className="font-semibold text-lg mb-2">Beauty Products</h3>
-              <p className="text-sm text-muted-foreground">Premium skincare and cosmetics</p>
+        <section>
+          <div className="container py-12 grid md:grid-cols-2 gap-10">
+            <div>
+              <h2 className="text-2xl font-bold">Company</h2>
+              <ul className="mt-4 text-sm text-foreground/70 space-y-2">
+                <li><span className="font-semibold">Legal Name:</span> NYSPV LTD</li>
+                <li><span className="font-semibold">Address:</span> 128 City Road, London, EC1V 2N</li>
+                <li><span className="font-semibold">Email:</span> <a className="underline" href="mailto:sales@jvcgoods.com">sales@jvcgoods.com</a></li>
+                <li><span className="font-semibold">Phone/WhatsApp:</span> +44 7577 035776</li>
+              </ul>
+              <div className="mt-6 flex gap-3">
+                <a href="/contact" className="rounded-lg px-4 py-2 font-semibold bg-rose-600 text-white">Contact us</a>
+                <a href="/catalog" className="rounded-lg px-4 py-2 border">Browse catalog</a>
+              </div>
             </div>
-            <div className="p-6 rounded-lg bg-card border shadow-card">
-              <h3 className="font-semibold text-lg mb-2">Toys</h3>
-              <p className="text-sm text-muted-foreground">Quality toys for all ages</p>
-            </div>
-            <div className="p-6 rounded-lg bg-card border shadow-card">
-              <h3 className="font-semibold text-lg mb-2">Pet Supplies</h3>
-              <p className="text-sm text-muted-foreground">Everything for beloved pets</p>
-            </div>
-            <div className="p-6 rounded-lg bg-card border shadow-card">
-              <h3 className="font-semibold text-lg mb-2">Home & Kitchen</h3>
-              <p className="text-sm text-muted-foreground">Essential products for modern living</p>
+            <div className="rounded-xl border p-6 bg-white">
+              <h3 className="font-semibold">Categories</h3>
+              <ul className="mt-3 text-sm text-foreground/70 grid grid-cols-2 gap-2">
+                <li>• Toys</li><li>• Pets</li><li>• Home &amp; Kitchen</li><li>• Beauty</li>
+              </ul>
+              <p className="mt-4 text-sm text-foreground/60">We’re continuously adding new products. Availability may vary.</p>
             </div>
           </div>
-        </div>
-      </div>
+        </section>
+
+        <footer className="border-t mt-8">
+          <div className="container py-8 text-sm text-foreground/70 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p>© {year} JVC Goods. All rights reserved.</p>
+            <div className="flex items-center gap-4">
+              <a href="/about" className="hover:text-rose-500">About</a>
+              <span>•</span>
+              <a href="/terms" className="hover:text-rose-500">Terms</a>
+              <span>•</span>
+              <a href="/privacy" className="hover:text-rose-500">Privacy</a>
+            </div>
+          </div>
+        </footer>
       </div>
     </PageTransition>
   );
