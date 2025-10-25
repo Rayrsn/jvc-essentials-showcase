@@ -5,174 +5,510 @@
       "name": "Beauty Products",
       "slug": "beauty",
       "description": "Premium skincare, cosmetics, and beauty essentials for retailers",
-      "productCount": 45
+      "productCount": 7
     },
     {
       "id": "toys",
       "name": "Toys",
       "slug": "toys",
       "description": "Quality toys and educational products for all ages",
-      "productCount": 38
+      "productCount": 7
     },
     {
       "id": "pets",
       "name": "Pet Supplies",
       "slug": "pets",
       "description": "Everything your customers need for their beloved pets",
-      "productCount": 32
+      "productCount": 7
     },
     {
       "id": "home",
       "name": "Home & Kitchen",
       "slug": "home",
       "description": "Essential home and kitchen products for modern living",
-      "productCount": 52
+      "productCount": 9
     }
   ],
   "products": [
     {
       "id": "beauty-001",
-      "name": "Luxury Skincare Set",
+      "name": "PureMist Foaming Cleanser",
       "category": "Beauty Products",
       "categorySlug": "beauty",
-      "price": "£45.00",
-      "priceValue": 45,
-      "image": "/placeholder.svg",
-      "inStock": true,
-      "description": "Premium 5-piece skincare collection with natural ingredients",
-      "features": ["Organic ingredients", "Cruelty-free", "Dermatologist tested", "All skin types"]
+      "price": "£13.99",
+      "priceValue": 13.99,
+      "image": "/products/PureMist Foaming Cleanser.png",
+      "inStock": false,
+      "description": "Gentle foaming cleanser suitable for daily use.",
+      "features": [
+        "Deep cleanses",
+        "Sulfate-free",
+        "Dermatologist tested"
+      ]
     },
     {
       "id": "beauty-002",
-      "name": "Professional Makeup Brush Set",
+      "name": "AquaDew Hydration Serum",
       "category": "Beauty Products",
       "categorySlug": "beauty",
-      "price": "£32.00",
-      "priceValue": 32,
-      "image": "/placeholder.svg",
-      "inStock": true,
-      "description": "12-piece professional makeup brush collection",
-      "features": ["Synthetic bristles", "Ergonomic handles", "Travel case included", "Easy to clean"]
+      "price": "£19.99",
+      "priceValue": 19.99,
+      "image": "/products/AquaDew Hydration Serum.png",
+      "inStock": false,
+      "description": "Lightweight hydration serum for all skin types.",
+      "features": [
+        "Fast-absorbing",
+        "Hyaluronic acid",
+        "Non-greasy"
+      ]
     },
     {
       "id": "beauty-003",
-      "name": "Anti-Aging Serum",
+      "name": "HydraBalance Daily Cream",
       "category": "Beauty Products",
       "categorySlug": "beauty",
-      "price": "£28.00",
-      "priceValue": 28,
-      "image": "/placeholder.svg",
-      "inStock": true,
-      "description": "Advanced formula with hyaluronic acid and vitamins",
-      "features": ["30ml bottle", "Reduces fine lines", "Hydrates skin", "Fast absorbing"]
+      "price": "£16.99",
+      "priceValue": 16.99,
+      "image": "/products/HydraBalance Daily Cream.png",
+      "inStock": false,
+      "description": "Daily moisturizer to restore and maintain skin balance.",
+      "features": [
+        "Lightweight",
+        "SPF-free",
+        "Suitable for sensitive skin"
+      ]
+    },
+    {
+      "id": "beauty-004",
+      "name": "SatinCare Lip Conditioning Balm",
+      "category": "Beauty Products",
+      "categorySlug": "beauty",
+      "price": "£6.99",
+      "priceValue": 6.99,
+      "image": "/products/SatinCare Lip Conditioning Balm.png",
+      "inStock": false,
+      "description": "Nourishing lip balm for soft, smooth lips.",
+      "features": [
+        "Long-lasting",
+        "Vitamin E",
+        "Non-sticky"
+      ]
+    },
+    {
+      "id": "beauty-005",
+      "name": "GlowThera Clay Detox Mask",
+      "category": "Beauty Products",
+      "categorySlug": "beauty",
+      "price": "£15.99",
+      "priceValue": 15.99,
+      "image": "/products/GlowThera Clay Detox Mask.png",
+      "inStock": false,
+      "description": "Detoxifying clay mask to brighten and purify skin.",
+      "features": [
+        "Deep detox",
+        "Mineral-rich",
+        "Brightening"
+      ]
+    },
+    {
+      "id": "beauty-006",
+      "name": "LumiTone Refreshing Toner",
+      "category": "Beauty Products",
+      "categorySlug": "beauty",
+      "price": "£11.99",
+      "priceValue": 11.99,
+      "image": "/products/LumiTone Refreshing Toner.png",
+      "inStock": false,
+      "description": "Refreshing toner to refine pores and balance skin.",
+      "features": [
+        "Alcohol-free",
+        "Balancing",
+        "Cooling sensation"
+      ]
+    },
+    {
+      "id": "beauty-007",
+      "name": "LuxeStrand Repair & Nourish Hair Masque",
+      "category": "Beauty Products",
+      "categorySlug": "beauty",
+      "price": "£21.99",
+      "priceValue": 21.99,
+      "image": "/products/LuxeStrand Repair & Nourish Hair Masque.jpg",
+      "inStock": false,
+      "description": "Deep repair masque to restore and nourish hair.",
+      "features": [
+        "Deep conditioning",
+        "Silicone-free",
+        "For damaged hair"
+      ]
     },
     {
       "id": "toys-001",
-      "name": "Educational Building Blocks",
+      "name": "ColorCraze Block Builder Set",
       "category": "Toys",
       "categorySlug": "toys",
-      "price": "£24.00",
-      "priceValue": 24,
-      "image": "/placeholder.svg",
-      "inStock": true,
-      "description": "200-piece colorful building block set for creative play",
-      "features": ["Ages 3+", "BPA-free plastic", "Storage container", "Educational guide"]
+      "price": "£20.99",
+      "priceValue": 20.99,
+      "image": "/products/ColorCraze Block Builder Set.png",
+      "inStock": false,
+      "description": "Expandable block builder set for creative construction play.",
+      "features": [
+        "200+ pieces",
+        "Interlocking blocks",
+        "Storage box"
+      ]
     },
     {
       "id": "toys-002",
-      "name": "Remote Control Racing Car",
+      "name": "Sparkle Builders Mega Set",
       "category": "Toys",
       "categorySlug": "toys",
-      "price": "£38.00",
-      "priceValue": 38,
-      "image": "/placeholder.svg",
-      "inStock": true,
-      "description": "High-speed RC car with rechargeable battery",
-      "features": ["Up to 30km/h", "Rechargeable", "Range: 50m", "Durable design"]
+      "price": "£22.99",
+      "priceValue": 22.99,
+      "image": "/products/Sparkle Builders Mega Set.png",
+      "inStock": false,
+      "description": "Mega construction set with sparkle-themed pieces.",
+      "features": [
+        "Large set",
+        "Bright colors",
+        "Instruction booklet"
+      ]
     },
     {
       "id": "toys-003",
-      "name": "Plush Teddy Bear Collection",
+      "name": "Ocean Quest Jigsaw Puzzle",
       "category": "Toys",
       "categorySlug": "toys",
-      "price": "£18.00",
-      "priceValue": 18,
-      "image": "/placeholder.svg",
-      "inStock": true,
-      "description": "Soft and cuddly teddy bears in various sizes",
-      "features": ["Hypoallergenic", "Machine washable", "CE certified", "Various colors"]
+      "price": "£11.99",
+      "priceValue": 11.99,
+      "image": "/products/Ocean Quest Jigsaw Puzzle.jpg",
+      "inStock": false,
+      "description": "500-piece ocean-themed jigsaw puzzle for family fun.",
+      "features": [
+        "500 pieces",
+        "High-quality print",
+        "Educational imagery"
+      ]
+    },
+    {
+      "id": "toys-004",
+      "name": "SnugglePals Teddy Bear",
+      "category": "Toys",
+      "categorySlug": "toys",
+      "price": "£14.49",
+      "priceValue": 14.49,
+      "image": "/products/SnugglePals Teddy Bear.png",
+      "inStock": false,
+      "description": "Soft plush teddy bear available in multiple sizes.",
+      "features": [
+        "Hypoallergenic",
+        "Machine washable",
+        "Multiple sizes"
+      ]
+    },
+    {
+      "id": "toys-005",
+      "name": "MiniHero Adventure Figures Pack",
+      "category": "Toys",
+      "categorySlug": "toys",
+      "price": "£17.99",
+      "priceValue": 17.99,
+      "image": "/products/MiniHero Adventure Figures Pack.png",
+      "inStock": false,
+      "description": "Pack of collectible action figures with accessories.",
+      "features": [
+        "6 figures",
+        "Accessory pieces",
+        "Collector cards"
+      ]
+    },
+    {
+      "id": "toys-006",
+      "name": "CreativeSpark Coloring Set",
+      "category": "Toys",
+      "categorySlug": "toys",
+      "price": "£13.49",
+      "priceValue": 13.49,
+      "image": "/products/CreativeSpark Coloring Set.png",
+      "inStock": false,
+      "description": "Complete coloring set with crayons, markers, and pads.",
+      "features": [
+        "48 pieces",
+        "Washable markers",
+        "Coloring book included"
+      ]
+    },
+    {
+      "id": "toys-007",
+      "name": "TurboTrack Racer Cars",
+      "category": "Toys",
+      "categorySlug": "toys",
+      "price": "£15.99",
+      "priceValue": 15.99,
+      "image": "/products/TurboTrack Racer Cars.png",
+      "inStock": false,
+      "description": "Set of high-speed racer cars and mini track sections.",
+      "features": [
+        "4 cars",
+        "Expandable track",
+        "Easy assembly"
+      ]
     },
     {
       "id": "pets-001",
-      "name": "Premium Dog Food",
+      "name": "TrailMate Reflective Dog Leash",
       "category": "Pet Supplies",
       "categorySlug": "pets",
-      "price": "£35.00",
-      "priceValue": 35,
-      "image": "/placeholder.svg",
-      "inStock": true,
-      "description": "5kg bag of nutritious dry dog food",
-      "features": ["All breeds", "Natural ingredients", "Grain-free option", "Omega fatty acids"]
+      "price": "£10.99",
+      "priceValue": 10.99,
+      "image": "/products/TrailMate Reflective Dog Leash.png",
+      "inStock": false,
+      "description": "Durable reflective leash for safe evening walks.",
+      "features": [
+        "Reflective stitching",
+        "Comfort grip",
+        "Heavy-duty clip"
+      ]
     },
     {
       "id": "pets-002",
-      "name": "Cat Scratching Post",
+      "name": "PawDish Stainless Feeding Bowl",
       "category": "Pet Supplies",
       "categorySlug": "pets",
-      "price": "£42.00",
-      "priceValue": 42,
-      "image": "/placeholder.svg",
-      "inStock": true,
-      "description": "Multi-level cat tree with scratching posts",
-      "features": ["Sisal rope", "Plush platforms", "Hanging toys", "Stable base"]
+      "price": "£8.99",
+      "priceValue": 8.99,
+      "image": "/products/PawDish Stainless Feeding Bowl.png",
+      "inStock": false,
+      "description": "Stainless steel feeding bowl with non-slip base.",
+      "features": [
+        "Stainless steel",
+        "Non-slip base",
+        "Dishwasher safe"
+      ]
     },
     {
       "id": "pets-003",
-      "name": "Pet Grooming Kit",
+      "name": "WhiskerWhirl Cat Teaser Wand",
       "category": "Pet Supplies",
       "categorySlug": "pets",
-      "price": "£26.00",
-      "priceValue": 26,
-      "image": "/placeholder.svg",
+      "price": "£7.99",
+      "priceValue": 7.99,
+      "image": "/products/WhiskerWhirl Cat Teaser Wand.png",
       "inStock": false,
-      "description": "Complete grooming set for dogs and cats",
-      "features": ["7-piece set", "Stainless steel", "Storage bag", "All coat types"]
+      "description": "Interactive cat teaser wand with rotating feathers.",
+      "features": [
+        "Feather toy",
+        "Extendable",
+        "Safe materials"
+      ]
+    },
+    {
+      "id": "pets-004",
+      "name": "CozyRest Plush Pet Bed",
+      "category": "Pet Supplies",
+      "categorySlug": "pets",
+      "price": "£39.99",
+      "priceValue": 39.99,
+      "image": "/products/CozyRest Plush Pet Bed.png",
+      "inStock": false,
+      "description": "Luxuriously soft plush bed for small to medium pets.",
+      "features": [
+        "Machine washable",
+        "Memory foam option",
+        "Non-slip bottom"
+      ]
+    },
+    {
+      "id": "pets-005",
+      "name": "FurEase Grooming Comb",
+      "category": "Pet Supplies",
+      "categorySlug": "pets",
+      "price": "£9.99",
+      "priceValue": 9.99,
+      "image": "/products/FurEase Grooming Comb.jpg",
+      "inStock": false,
+      "description": "Dual-sided grooming comb for detangling and finishing.",
+      "features": [
+        "Stainless steel teeth",
+        "Ergonomic handle",
+        "Removes loose fur"
+      ]
+    },
+    {
+      "id": "pets-006",
+      "name": "ComfortLoop Adjustable Collar",
+      "category": "Pet Supplies",
+      "categorySlug": "pets",
+      "price": "£11.99",
+      "priceValue": 11.99,
+      "image": "/products/ComfortLoop Adjustable Collar.jpeg",
+      "inStock": false,
+      "description": "Adjustable collar with quick-release buckle and reflective trim.",
+      "features": [
+        "Quick-release",
+        "Reflective trim",
+        "Adjustable"
+      ]
+    },
+    {
+      "id": "pets-007",
+      "name": "AquaFlow Filtered Water Fountain",
+      "category": "Pet Supplies",
+      "categorySlug": "pets",
+      "price": "£27.99",
+      "priceValue": 27.99,
+      "image": "/products/AquaFlow Filtered Water Fountain.png",
+      "inStock": false,
+      "description": "Filtered fountain to encourage pets to drink fresher water.",
+      "features": [
+        "Replaceable filter",
+        "Quiet pump",
+        "2L capacity"
+      ]
     },
     {
       "id": "home-001",
-      "name": "Stainless Steel Cookware Set",
+      "name": "StoneEdge Frying Pan",
       "category": "Home & Kitchen",
       "categorySlug": "home",
-      "price": "£89.00",
-      "priceValue": 89,
-      "image": "/placeholder.svg",
-      "inStock": true,
-      "description": "10-piece professional cookware set",
-      "features": ["Dishwasher safe", "Induction compatible", "Lifetime warranty", "Even heat distribution"]
+      "price": "£22.99",
+      "priceValue": 22.99,
+      "image": "/products/StoneEdge Frying Pan.png",
+      "inStock": false,
+      "description": "Durable frying pan with stone-derived non-stick coating.",
+      "features": [
+        "Non-stick",
+        "Oven safe",
+        "Comfort handle"
+      ]
     },
     {
       "id": "home-002",
-      "name": "Kitchen Knife Set",
+      "name": "ChefPro Knife Set",
       "category": "Home & Kitchen",
       "categorySlug": "home",
-      "price": "£55.00",
-      "priceValue": 55,
-      "image": "/placeholder.svg",
-      "inStock": true,
-      "description": "8-piece professional chef knife set with block",
-      "features": ["German steel", "Ergonomic handles", "Wooden block", "Sharpening rod"]
+      "price": "£31.99",
+      "priceValue": 31.99,
+      "image": "/products/ChefPro Knife Set.png",
+      "inStock": false,
+      "description": "Professional 6-piece knife set with wooden block.",
+      "features": [
+        "High-carbon steel",
+        "Ergonomic handles",
+        "Wood block included"
+      ]
     },
     {
       "id": "home-003",
-      "name": "Smart Coffee Maker",
+      "name": "CozyLoom Woven Throw Blanket",
       "category": "Home & Kitchen",
       "categorySlug": "home",
-      "price": "£68.00",
-      "priceValue": 68,
-      "image": "/placeholder.svg",
-      "inStock": true,
-      "description": "Programmable coffee maker with thermal carafe",
-      "features": ["12-cup capacity", "Timer function", "Auto shut-off", "Thermal carafe"]
+      "price": "£27.99",
+      "priceValue": 27.99,
+      "image": "/products/CozyLoom Woven Throw Blanket.png",
+      "inStock": false,
+      "description": "Soft woven throw ideal for sofas and beds.",
+      "features": [
+        "Machine washable",
+        "Lightweight",
+        "Warm weave"
+      ]
+    },
+    {
+      "id": "home-004",
+      "name": "AirSweep Cordless Vacuum",
+      "category": "Home & Kitchen",
+      "categorySlug": "home",
+      "price": "£54.99",
+      "priceValue": 54.99,
+      "image": "/products/AirSweep Cordless Vacuum.png",
+      "inStock": false,
+      "description": "Lightweight cordless vacuum for quick cleanups.",
+      "features": [
+        "Cordless",
+        "Rechargeable",
+        "Multiple attachments"
+      ]
+    },
+    {
+      "id": "home-005",
+      "name": "SteamPure Electric Kettle",
+      "category": "Home & Kitchen",
+      "categorySlug": "home",
+      "price": "£24.99",
+      "priceValue": 24.99,
+      "image": "/products/SteamPure Electric Kettle.png",
+      "inStock": false,
+      "description": "Fast-boil electric kettle with auto shut-off.",
+      "features": [
+        "1.7L capacity",
+        "Auto shut-off",
+        "Stainless steel"
+      ]
+    },
+    {
+      "id": "home-006",
+      "name": "SmartSeal Kitchen Storage Set",
+      "category": "Home & Kitchen",
+      "categorySlug": "home",
+      "price": "£19.99",
+      "priceValue": 19.99,
+      "image": "/products/SmartSeal Kitchen Storage Set.png",
+      "inStock": false,
+      "description": "Airtight storage set to keep food fresher longer.",
+      "features": [
+        "Airtight lids",
+        "BPA-free",
+        "Stackable"
+      ]
+    },
+    {
+      "id": "home-007",
+      "name": "EmberStone Non-Stick Skillet",
+      "category": "Home & Kitchen",
+      "categorySlug": "home",
+      "price": "£25.49",
+      "priceValue": 25.49,
+      "image": "/products/EmberStone Non-Stick Skillet.png",
+      "inStock": false,
+      "description": "Everyday non-stick skillet with even heat distribution.",
+      "features": [
+        "Durable coating",
+        "Even heating",
+        "Comfort handle"
+      ]
+    },
+    {
+      "id": "home-008",
+      "name": "LinenWeave Reversible Throw Blanket",
+      "category": "Home & Kitchen",
+      "categorySlug": "home",
+      "price": "£29.99",
+      "priceValue": 29.99,
+      "image": "/products/CozyLoom Woven Throw Blanket.png",
+      "inStock": false,
+      "description": "Reversible throw with a soft linen-weave finish.",
+      "features": [
+        "Reversible",
+        "Machine washable",
+        "Breathable"
+      ]
+    },
+    {
+      "id": "home-009",
+      "name": "BreezeMax Cordless Vacuum Wand",
+      "category": "Home & Kitchen",
+      "categorySlug": "home",
+      "price": "£63.99",
+      "priceValue": 63.99,
+      "image": "/products/AirSweep Cordless Vacuum.png",
+      "inStock": false,
+      "description": "High-performance cordless wand vacuum for whole-home cleaning.",
+      "features": [
+        "Long runtime",
+        "Power modes",
+        "Lightweight"
+      ]
     }
   ]
 }
