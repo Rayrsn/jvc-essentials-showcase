@@ -11,7 +11,7 @@ interface ProductCardProps {
 }
 
 const CardInner = ({ name, category, price, image, inStock }: Omit<ProductCardProps, 'id'>) => (
-  <div className={`relative overflow-hidden rounded-lg shadow-card transition-smooth bg-card h-full flex flex-col ${!inStock ? 'cursor-not-allowed opacity-80' : 'hover:shadow-card-hover'}`}>
+  <div className={`relative overflow-hidden rounded-lg shadow-card transition-smooth bg-card h-full flex flex-col ${!inStock ? 'cursor-not-allowed' : 'hover:shadow-card-hover'}`}>
     <div className="aspect-square overflow-hidden relative">
       <img
         src={image}
@@ -19,7 +19,8 @@ const CardInner = ({ name, category, price, image, inStock }: Omit<ProductCardPr
         className={`w-full h-full object-cover transition-smooth ${inStock ? 'group-hover:scale-105' : ''}`}
       />
       {!inStock && (
-        <div className="absolute inset-0 bg-background/80 flex items-center justify-center">
+        // Make overlay more transparent so the image shows through better.
+        <div className="absolute inset-0 bg-background/30 flex items-center justify-center">
           <Badge variant="destructive">Out of Stock</Badge>
         </div>
       )}
